@@ -1,0 +1,2 @@
+para importar video, abrir o youtuble clicar em compartilhar e depois em incorporar
+para importar o mapa, abrir o google.maps, menu, compartilhar e incorporar mapa (selecionar incorporar)

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="box">
+            <h1><img src="./imgs/logo.png" alt=""></h1>
+            <nav>
+                <ul class="navegacao">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>   
+    </div> 
+    </header>  
+
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" required class="input-padrao"> 
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required class="input-padrao" placeholder="exemplo@hotmail.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone"  placeholder="(xx) xxxx-xxxx" maxlength="14" minlength="14" required class="input-padrao">
+
+            <label for="text">Mensagem</label>
+            <textarea name="text" id="text" cols="40" rows="8" class="input-padrao"></textarea>
+
+            <fieldset>
+                <legend>Qual a melhor forma de contato?</legend>
+
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                <label for="radio-zap"><input type="radio" name="contato" value="mensagem" id="radio-zap" checked>WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend class="titulo2">Qual o melhor horário?</legend>
+                <select name="horario" id="horario">
+                    <option >Manhã</option>
+                    <option >Tarde</option>
+                    <option >Noite</option>
+                </select>
+            </fieldset>
+            <label class="checkbox" for="novidades"><input type="checkbox" name="novidade" id="novidades" checked>Gostaria de receber as novidades pelo Email?</label>
+            
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+        <!-- A tag table, que representa a tabela 
+             A tag tr, que representa a linha da tabela
+             A tag td, que representa a célula da tabela
+             A tag thead, que representa o cabeçalho da tabela
+             A tag tbody, que representa o corpo da tabela
+             A tag th, que representa a célula do cabeçalho da tabela
+             A tag tfoot, que representa o rodapé da tabela-->
+             
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="./imgs/logo-branco.png" alt="">
+        <p>&copy; copyright alura - 2019</p>
+    </footer>
+</body>
+</html>
